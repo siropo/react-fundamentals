@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "create": "webpack",
+    "start": "webpack-dev-server --open"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
   },
   "author": "",
   "license": "ISC",
