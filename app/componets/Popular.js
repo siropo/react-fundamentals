@@ -14,9 +14,6 @@ function SelectLanguage(props) {
     ];
     return (
         <ul className="languages">
-            <p>
-                selectedLanguage {props.selectedLanguage}
-            </p>
             {languages
                 .map(function (lang) {
                     return (
@@ -45,7 +42,7 @@ function RepoGrid(props) {
                 .repos
                 .map(function (repo, index) {
                     return (
-                        <li key={repo.name} className='popolar-item'>
+                        <li key={repo.name} className='popular-item'>
                             <div className='popular-rank'>#{index + 1}</div>
                             <ul className='space-list-items'>
                                 <li>
